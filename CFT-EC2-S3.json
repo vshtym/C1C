@@ -205,6 +205,18 @@
         },
         "DeletionPolicy" : "Retain"
       }
+      ,
+    "S3Bucket2" : {
+        "Type" : "AWS::S3::Bucket",
+        "Properties" : {
+          "AccessControl" : "PublicRead",
+          "WebsiteConfiguration" : {
+            "IndexDocument" : "index.html",
+            "ErrorDocument" : "errorr.html"
+           }
+        },
+        "DeletionPolicy" : "Retain"
+      }
   },
 
   "Outputs" : {
