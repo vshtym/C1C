@@ -188,8 +188,8 @@
         "GroupDescription" : "Enable SSH access via port 22",
         "SecurityGroupIngress" : [ {
           "IpProtocol" : "tcp",
-          "FromPort" : "22",
-          "ToPort" : "22",
+          "FromPort" : "21",
+          "ToPort" : "21",
           "CidrIp" : { "Ref" : "SSHLocation"}
         } ]
       }
